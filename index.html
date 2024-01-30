@@ -20,9 +20,14 @@
 <body>
   <div class="wrapper">
     
-    <div class="image">
-      
-      <img src="pexels-aleksandar-pasaric-2070047.jpg" alt="a photo of Seoul by Aleksander Pasaric">
+    <div class="image-area">
+
+      <p class="credit">Photo by Aleksander Pasaric on Pexels</p>
+
+      <div class="logo">
+        <img src="odin-lined.png" alt="ODIN">
+        <h1>ODIN</h1>
+      </div>
 
     </div>
   
@@ -35,36 +40,39 @@
       </div>
 
       <div class="login-form">
-        Let's Do This
-        <form action="example.com/path" method="post">
-          <fieldset class="input-form">
-            <label for="first_name">First Name:</label>
+        <p class="login-title">Let's Do This!</p>
+        <form class="form" action="#" method="get">
+
+          <span class="form-row">
+            <label for="first_name">First Name</label>
             <input type="text" id="first_name" name="first_name">
 
-            <label for="last_name">Last Name:</label>
+            <label for="last_name">Last Name</label>
             <input type="text" id="last_name" name="last_name">
-          </fieldset>
+          </span>
 
-          <fieldset class="input-form">
-            <label for="user_email">Email Address:</label>
+          <span class="form-row">
+            <label for="user_email">Email</label>
             <input type="email" id="user_email" name="email" placeholder="you@youremail.com">
-            <label for="phone">Phone Number:</label>
+
+            <label for="phone">Phone Number</label>
             <input type="number" id="phone" name="phone_number">
-          </fieldset>
+          </span>
 
-          <fieldset class="input-form">
-            <label for="user_password">Password:</label>
-            <input type="password" id="user_password" name="password">
+          <span class="form-row">
+            <label for="user_password">Password</label>
+            <input type="password" id="user_password" name="password" required>
 
-            <label for="user_password_conf">Confirm Password:</label>
-            <input type="password" id="user_password_conf" name="confirm_password">
-          </fieldset>
+            <label for="user_password_conf">Confirm Password</label>
+            <input type="password" id="user_password_conf" name="confirm_password" required>
+          </span>
+
+          <div class="interact">
+            <button type="submit">Create Account</button>
+            <p>already have an account? <a> Log in </a> </p>
+          </div>    
+
         </form>
-      </div>
-
-      <div class="interact">
-        <button>Sign Up</button>
-        <p>already have an account?</p>
       </div>
 
     </div>

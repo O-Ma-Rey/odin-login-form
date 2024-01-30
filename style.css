@@ -1,49 +1,122 @@
 body {
   margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
 }
 
 .wrapper {
   display: flex;
 }
 
-.image {
-  border: 1px solid black;
+/* image section */
+
+.image-area {
   flex: 1;
+  padding: 0;
+  background-image: url("pexels-aleksandar-pasaric-2070047.jpg");
+  background-size: cover;
+}
+
+.logo {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 img {
-  height: 100px;
   width: 100px;
 }
 
-.login-area {
+h1 {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  justify-content: center;
+  color: white;
+  
+}
+
+.credit {
+  text-align: center;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+}
+
+/* form section */
+
+.login-area {
+  margin: 0;
   flex: 2;
+  background-color: lemonchiffon;
 }
 
 .info {
-  padding-top: 100px;
-  border: 1px solid blue;
-  flex: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
 }
+
+/* Form CSS */
 
 .login-form {
-  border: 1px solid green;
-  flex: 1;
-  justify-content: flex-start;
+  padding-top: 10px;
+
 }
 
-.input-form {
-  border: 0;
+.login-title {
+  padding-left: 10px;
 }
 
-input {
-  box-sizing: border-box;
+.form {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: white;
 }
+
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  padding-left: 10px;
+}
+.form-row label {
+  display: block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  align-items: baseline;
+}
+.form-row input {
+  width: 50%;
+  margin: 5px;
+  border-color: #E5E7EB;
+  border-radius: 5px;
+}
+
+.form-row input:focus {
+  border-color: blue;
+}
+
+.form-row input[type=password]:invalid {
+  border-color: red;
+}
+
+/* button area and hyperlink */
 
 .interact {
-  border: 1px solid yellow;
-  flex: 1;
+  margin: 0;
+  background-color: lemonchiffon;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+
+button {
+  background-color: #596D48;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+a {
+  color: #596D48;
 }
